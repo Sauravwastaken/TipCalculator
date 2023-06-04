@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="/sass/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://bitsofco.de/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <section class="section">
+      <!-- Image Section -->
+      <div class="img_section">
+        <img
+          src="https://img.freepik.com/free-vector/design-inspiration-concept-illustration_114360-3992.jpg?w=740&t=st=1685853464~exp=1685854064~hmac=4e5763381ea32961ecd286c05eb7b26fa0d714c018229ab66a3397bf8bdc3b5d"
+          alt="Tip Calculator"
+        />
+      </div>
+
+      <!-- Tip Calculator Section -->
+      <div class="calculator_section">
+        <div class="tip_calculator">
+          <!-- Heading -->
+          <h1>Tip Calculator</h1>
+
+          <!-- Inputs -->
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2.4rem"
+                height="2.4rem"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-dollar-sign"
+              >
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path
+                  d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                ></path>
+              </svg>
+              <input id="billAmount" type="number" placeholder="Bill Amount" />
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2.4rem"
+                height="2.4rem"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-user"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <input id="personNum" type="number" placeholder="No of Person" />
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2.4rem"
+                height="2.4rem"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-star"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <select id="rating" name="Rating" id="Rating">
+                <option disabled selected value="default">
+                  Choose Rating...
+                </option>
+                <option value=".3">30% - Outstanding</option>
+                <option value=".2">20% - Good</option>
+                <option value=".15">15% - It was ok</option>
+                <option value=".1">10% - Bad</option>
+                <option value=".05">5% - Terrible</option>
+              </select>
+            </li>
+          </ul>
+
+          <!-- Button -->
+          <button class="calculate_btn" id="calculateBtn">Calculate</button>
+        </div>
+      </div>
+
+      <div class="tip_amount"></div>
+    </section>
+
+    <audio
+      id="moneyAudio"
+      src="https://drive.google.com/uc?export=download&id=1IRmO3ZsvIdDH703DR0LZwa5O7M2ax4Iv"
+    ></audio>
+
+    <script src="index.js"></script>
+  </body>
+</html>
